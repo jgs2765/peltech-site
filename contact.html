@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PelTech LLC | Cybersecurity & IT Services</title>
+
+  <!-- Favicon Placeholder -->
+  <link rel="icon" href="/favicon.png" />
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+  <style>
+/* Center nav links on desktop */
+.nav-center { text-align: center; }
+.nav-center .w3-bar-item {
+  float: none !important;
+  display: inline-block;
+}
+  </style>
+</head>
+
+<body>
+  <!-- HEADER SECTION -->
+  <header class="w3-container w3-indigo w3-padding-16">
+    <div class="w3-row w3-center w3-content" style="max-width:1200px">
+      <div class="w3-col s12">
+        <h1 class="w3-xxlarge" style="margin:0;">PelTech LLC</h1>
+        <h4 style="margin:0;">Cybersecurity &amp; IT Services</h4>
+      </div>
+      <div class="w3-col s12 w3-padding-16">
+        <img src="https://fpoimg.com/700x250?text=Demo Video&bg_color=e6e6e6&text_color=8F8F8F"
+             alt="PelTech Demo Video" class="w3-image">
+      </div>
+    </div>
+  </header>
+
+<!-- RESPONSIVE NAVIGATION BAR -->
+<nav class="w3-bar w3-white w3-card nav-center">
+
+  <!-- Hamburger button (hidden on large screens) -->
+  <button class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
+          onclick="toggleMenu()" title="Toggle Navigation Menu">
+    ☰
+  </button>
+
+  <!-- Centered nav links (desktop) -->
+  <div id="navLinks" class="nav-center w3-hide-small">
+    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-mobile">Services</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-mobile">Portfolio</a>
+    <a href="resources.html" class="w3-bar-item w3-button w3-mobile">Resources</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  </div>
+</nav>
+
+<!-- MOBILE MENU (hidden by default) -->
+<div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-center">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+  <a href="resources.html" class="w3-bar-item w3-button">Resources</a>
+  <a href="about.html" class="w3-bar-item w3-button">About Us</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+
+  <!-- FREE SECURITY ASSESSMENT -->
+<div class="w3-row w3-indigo w3-center w3-padding-32">
+  <div class="w3-col s12">
+    <h2 class="w3-xxlarge" style="margin:0;">Protecting Your Business in the Digital Age</h2>
+  </div>
+  <div class="w3-col s12 w3-padding-16">
+    <img src="https://fpoimg.com/300x75?text=Get+a+Free+Security+Assessment&bg_color=e6e6e6&text_color=8F8F8F"
+         alt="PelTech Free Assessment Button" class="w3-image">
+  </div>
+</div>
+
+  <!-- BREADCRUMBS -->
+<nav class="w3-container w3-padding-16 w3-center" aria-label="Breadcrumb">
+  <span class="w3-small">Home</span> &gt;
+  <span class="w3-small w3-text-grey">Contact</span>
+</nav>
+
+<!-- CONTACT FORM: Free Cybersecurity Assessment -->
+<section id="contact" class="w3-container w3-padding-64 w3-light-grey">
+  <div class="w3-content" style="max-width:1200px">
+    <h2 class="w3-center">Contact Us:</h2>
+    <p class="w3-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem eget erat pharetra euismod.</p>
+
+    <form class="w3-container w3-card-4 w3-white w3-padding-32 w3-margin-top">
+
+      <!-- Name -->
+      <label class="w3-text-indigo"><b>Name</b></label>
+      <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" name="name" required placeholder="Your full name">
+
+      <!-- Company -->
+      <label class="w3-text-indigo"><b>Company</b></label>
+      <input class="w3-input w3-border w3-round w3-margin-bottom" type="text" name="company" placeholder="Company name">
+
+      <!-- Email -->
+      <label class="w3-text-indigo"><b>Email</b></label>
+      <input class="w3-input w3-border w3-round w3-margin-bottom" type="email" name="email" required placeholder="name@example.com">
+
+      <!-- Phone -->
+      <label class="w3-text-indigo"><b>Phone</b></label>
+      <input class="w3-input w3-border w3-round w3-margin-bottom" type="tel" name="phone"
+             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+             title="Enter a valid phone number format: 123-456-7890">
+
+      <!-- Main Concern -->
+      <label class="w3-text-indigo"><b>Main Concern</b></label>
+      <textarea class="w3-input w3-border w3-round w3-margin-bottom" name="message" rows="5"
+                placeholder="Describe your primary cybersecurity concern..."></textarea>
+
+      <!-- Submit Button -->
+      <div class="w3-center">
+        <button class="w3-button w3-indigo w3-round-large w3-padding-large" type="submit">
+          Submit
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="w3-indigo w3-padding-48 w3-center">
+  <div class="w3-content" style="max-width:1200px">
+
+    <!-- Newsletter Signup -->
+    <h4 class="w3-text-white">Subscribe to Our Newsletter</h4>
+    <p class="w3-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem eget erat pharetra euismod.</p>
+
+    <form class="w3-container w3-padding-16 w3-center" style="max-width:500px;margin:auto;">
+      <div class="w3-row-padding">
+        <div class="w3-col s8">
+          <input class="w3-input w3-round w3-border-0" type="email" name="newsletterEmail"
+                 placeholder="Enter your email" required>
+        </div>
+        <div class="w3-col s4">
+          <button class="w3-button w3-white w3-round w3-block" type="submit">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Divider -->
+    <hr class="w3-border-white w3-margin-top w3-margin-bottom" style="opacity:0.2;">
+
+    <!-- Footer Links -->
+    <p class="w3-text-white w3-small">
+      <a href="sitemap.html" class="w3-text-white w3-hover-text-grey" style="text-decoration:none;">Sitemap</a> |
+      <a href="privacy.html" class="w3-text-white w3-hover-text-grey" style="text-decoration:none;">Privacy Policy</a> |
+      <a href="accessibility.html" class="w3-text-white w3-hover-text-grey" style="text-decoration:none;">Accessibility Statement</a> |
+      © 2025 PelTech LLC
+    </p>
+
+  </div>
+</footer>
+
+<!-- Hamburger menu mobile -->
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("mobileNav");
+  if (menu.classList.contains("w3-show")) {
+    menu.classList.remove("w3-show");
+  } else {
+    menu.classList.add("w3-show");
+  }
+}
+</script>
+
+</body>
+</html>
