@@ -3,266 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PelTech LLC | Cybersecurity & IT Services</title>
-
-  <!-- Favicon Placeholder -->
-  <link rel="icon" href="/favicon.png" />
-
-  <!-- W3.CSS -->
+  <title>Portfolio | Case Studies</title>
+  <!-- W3.CSS only -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
-  <style>
-/* Center nav links on desktop */
-.nav-center { text-align: center; }
-.nav-center .w3-bar-item {
-  float: none !important;
-  display: inline-block;
-}
-  </style>
 </head>
+<body class="w3-light-grey">
 
-<body>
-  <!-- HEADER SECTION -->
-  <header class="w3-container w3-indigo w3-padding-16">
-    <div class="w3-row w3-center w3-content" style="max-width:1200px">
-      <div class="w3-col s12">
-        <h1 class="w3-xxlarge" style="margin:0;">PelTech LLC</h1>
-        <h4 style="margin:0;">Cybersecurity &amp; IT Services</h4>
-      </div>
-      <div class="w3-col s12 w3-padding-16">
-        <img src="https://fpoimg.com/700x250?text=Demo Video&bg_color=e6e6e6&text_color=8F8F8F"
-             alt="PelTech Demo Video" class="w3-image">
-      </div>
-    </div>
+  <!-- HEADER -->
+  <header class="w3-container w3-indigo w3-center w3-padding-32">
+    <h1 class="w3-xxlarge" style="margin:0;">PelTech LLC</h1>
+    <h4 style="margin:0;">Cybersecurity &amp; IT Services</h4>
   </header>
 
-<!-- RESPONSIVE NAVIGATION BAR -->
-<nav class="w3-bar w3-white w3-card nav-center">
+  <!-- BREADCRUMB -->
+  <nav class="w3-container w3-padding-16 w3-center" aria-label="Breadcrumb">
+    <span class="w3-small">Home</span> &gt; <span class="w3-small w3-text-grey">Portfolio</span>
+  </nav>
 
-  <!-- Hamburger button (hidden on large screens) -->
-  <button class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
-          onclick="toggleMenu()" title="Toggle Navigation Menu">
-    ☰
-  </button>
+  <!-- GALLERY -->
+  <main class="w3-container w3-padding-64 w3-light-grey">
+    <div class="w3-content" style="max-width:1200px">
 
-  <!-- Centered nav links (desktop) -->
-  <div id="navLinks" class="nav-center w3-hide-small">
-    <a href="index.html" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <a href="services.html" class="w3-bar-item w3-button w3-mobile">Services</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-mobile">Portfolio</a>
-    <a href="resources.html" class="w3-bar-item w3-button w3-mobile">Resources</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-mobile">About Us</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-mobile">Contact</a>
-  </div>
-</nav>
+      <!-- Unique taxonomy ID on a key element -->
+      <h2 id="case-studies" class="w3-center w3-text-indigo">Case Studies Gallery</h2>
+      <p class="w3-center w3-large">Real-world examples organized with taxonomy classes &amp; W3.CSS.</p>
 
-<!-- MOBILE MENU (hidden by default) -->
-<div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-center">
-  <a href="index.html" class="w3-bar-item w3-button">Home</a>
-  <a href="services.html" class="w3-bar-item w3-button">Services</a>
-  <a href="portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="resources.html" class="w3-bar-item w3-button">Resources</a>
-  <a href="about.html" class="w3-bar-item w3-button">About Us</a>
-  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-</div>
+      <!-- Row 1 -->
+      <div class="w3-row-padding w3-center w3-margin-top">
 
-
-  <!-- FREE SECURITY ASSESSMENT -->
-<div class="w3-row w3-indigo w3-center w3-padding-32">
-  <div class="w3-col s12">
-    <h2 class="w3-xxlarge" style="margin:0;">Protecting Your Business in the Digital Age</h2>
-  </div>
-  <div class="w3-col s12 w3-padding-16">
-    <img src="https://fpoimg.com/300x75?text=Get+a+Free+Security+Assessment&bg_color=e6e6e6&text_color=8F8F8F"
-         alt="PelTech Free Assessment Button" class="w3-image">
-  </div>
-</div>
-
-  <!-- BREADCRUMBS -->
-<nav class="w3-container w3-padding-16 w3-center" aria-label="Breadcrumb">
-  <span class="w3-small">Home</span> &gt;
-  <span class="w3-small w3-text-grey">Portfolio</span>
-</nav>
-
-<!-- PORTFOLIO (Placeholder Version) -->
-<div class="w3-container w3-padding-64 w3-light-grey">
-  <div class="w3-content" style="max-width:1200px">
-    <h2 class="w3-center w3-text-indigo">Portfolio</h2>
-    <p class="w3-center w3-large">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-    </p>
-
-    <!-- GALLERY GRID -->
-    <div class="w3-row-padding w3-center w3-margin-top">
-
-      <!-- Image 1 -->
-      <div class="w3-third w3-margin-bottom">
-        <img src="https://fpoimg.com/400x250?text=Project+One&bg_color=e6e6e6&text_color=8F8F8F" 
-             style="width:100%;cursor:pointer" 
-             onclick="openModal();currentSlide(1)" 
-             class="w3-hover-opacity" 
-             alt="Project One - Lorem Ipsum Description">
-        <h4 class="w3-text-indigo">Project One</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <!-- Image 2 -->
-      <div class="w3-third w3-margin-bottom">
-        <img src="https://fpoimg.com/400x250?text=Project+Two&bg_color=e6e6e6&text_color=8F8F8F" 
-             style="width:100%;cursor:pointer" 
-             onclick="openModal();currentSlide(2)" 
-             class="w3-hover-opacity" 
-             alt="Project Two - Lorem Ipsum Description">
-        <h4 class="w3-text-indigo">Project Two</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <!-- Image 3 -->
-      <div class="w3-third w3-margin-bottom">
-        <img src="https://fpoimg.com/400x250?text=Project+Three&bg_color=e6e6e6&text_color=8F8F8F" 
-             style="width:100%;cursor:pointer" 
-             onclick="openModal();currentSlide(3)" 
-             class="w3-hover-opacity" 
-             alt="Project Three - Lorem Ipsum Description">
-        <h4 class="w3-text-indigo">Project Three</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-
-    <div class="w3-row-padding w3-center w3-margin-top">
-      <!-- Image 4 -->
-      <div class="w3-third w3-margin-bottom">
-        <img src="https://fpoimg.com/400x250?text=Project+Four&bg_color=e6e6e6&text_color=8F8F8F" 
-             style="width:100%;cursor:pointer" 
-             onclick="openModal();currentSlide(4)" 
-             class="w3-hover-opacity" 
-             alt="Project Four - Lorem Ipsum Description">
-        <h4 class="w3-text-indigo">Project Four</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <!-- Image 5 -->
-      <div class="w3-third w3-margin-bottom">
-        <img src="https://fpoimg.com/400x250?text=Project+Five&bg_color=e6e6e6&text_color=8F8F8F" 
-             style="width:100%;cursor:pointer" 
-             onclick="openModal();currentSlide(5)" 
-             class="w3-hover-opacity" 
-             alt="Project Five - Lorem Ipsum Description">
-        <h4 class="w3-text-indigo">Project Five</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-
-      <!-- Image 6 -->
-      <div class="w3-third w3-margin-bottom">
-        <img src="https://fpoimg.com/400x250?text=Project+Six&bg_color=e6e6e6&text_color=8F8F8F" 
-             style="width:100%;cursor:pointer" 
-             onclick="openModal();currentSlide(6)" 
-             class="w3-hover-opacity" 
-             alt="Project Six - Lorem Ipsum Description">
-        <h4 class="w3-text-indigo">Project Six</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- LIGHTBOX MODAL -->
-<div id="portfolioModal" class="w3-modal w3-black">
-  <span class="w3-button w3-large w3-black w3-display-topright" onclick="closeModal()" title="Close Modal">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center">
-
-    <img class="mySlides" src="https://fpoimg.com/800x500?text=Project+One+Full+View&bg_color=e6e6e6&text_color=8F8F8F" style="width:100%">
-    <img class="mySlides" src="https://fpoimg.com/800x500?text=Project+Two+Full+View&bg_color=e6e6e6&text_color=8F8F8F" style="width:100%">
-    <img class="mySlides" src="https://fpoimg.com/800x500?text=Project+Three+Full+View&bg_color=e6e6e6&text_color=8F8F8F" style="width:100%">
-    <img class="mySlides" src="https://fpoimg.com/800x500?text=Project+Four+Full+View&bg_color=e6e6e6&text_color=8F8F8F" style="width:100%">
-    <img class="mySlides" src="https://fpoimg.com/800x500?text=Project+Five+Full+View&bg_color=e6e6e6&text_color=8F8F8F" style="width:100%">
-    <img class="mySlides" src="https://fpoimg.com/800x500?text=Project+Six+Full+View&bg_color=e6e6e6&text_color=8F8F8F" style="width:100%">
-
-    <!-- Navigation buttons -->
-    <a class="w3-button w3-display-left w3-hover-indigo" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="w3-button w3-display-right w3-hover-indigo" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-</div>
-
-<!-- LIGHTBOX SCRIPT -->
-<script>
-function openModal() {
-  document.getElementById("portfolioModal").style.display = "block";
-}
-function closeModal() {
-  document.getElementById("portfolioModal").style.display = "none";
-}
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-function showSlides(n) {
-  const slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
-</script>
-
-
-
-<!-- FOOTER SECTION -->
-<footer class="w3-indigo w3-padding-48 w3-center">
-  <div class="w3-content" style="max-width:1200px">
-
-    <!-- Newsletter Signup -->
-    <h4 class="w3-text-white">Subscribe to Our Newsletter</h4>
-    <p class="w3-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae sem eget erat pharetra euismod.</p>
-
-    <form class="w3-container w3-padding-16 w3-center" style="max-width:500px;margin:auto;">
-      <div class="w3-row-padding">
-        <div class="w3-col s8">
-          <input class="w3-input w3-round w3-border-0" type="email" name="newsletterEmail"
-                 placeholder="Enter your email" required>
+        <!-- Card 1 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom topic-case-studies task-threat-detection">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/firewalls.jpg" alt="Firewall rules case study"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Firewalls</h4>
+          </div>
         </div>
-        <div class="w3-col s4">
-          <button class="w3-button w3-white w3-round w3-block" type="submit">
-            Sign Up
-          </button>
+
+        <!-- Card 2 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom topic-case-studies task-incident-response">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/vlans.jpg" alt="VLAN segmentation case study"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">VLAN Segmentation</h4>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-threat-detection task-incident-response">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/siem.jpg" alt="SIEM monitoring example"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">SIEM</h4>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom topic-case-studies task-threat-detection">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/logs.jpg" alt="Log monitoring example"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Log Monitoring</h4>
+          </div>
         </div>
       </div>
-    </form>
 
-    <!-- Divider -->
-    <hr class="w3-border-white w3-margin-top w3-margin-bottom" style="opacity:0.2;">
+      <!-- Row 2 -->
+      <div class="w3-row-padding w3-center w3-margin-top">
 
-    <!-- Footer Links -->
-    <p class="w3-text-white w3-small">
-      <a href="sitemap.html" class="w3-text-white w3-hover-text-grey" style="text-decoration:none;">Sitemap</a> |
-      <a href="privacy.html" class="w3-text-white w3-hover-text-grey" style="text-decoration:none;">Privacy Policy</a> |
-      <a href="accessibility.html" class="w3-text-white w3-hover-text-grey" style="text-decoration:none;">Accessibility Statement</a> |
-      © 2025 PelTech LLC
-    </p>
+        <!-- Card 5 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-incident-response topic-case-studies">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/containment.jpg" alt="Containment procedures example"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Containment</h4>
+          </div>
+        </div>
 
-  </div>
-</footer>
+        <!-- Card 6 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom topic-case-studies task-incident-response">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/digital-forensics.jpg" alt="Forensics workflow example"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Forensics</h4>
+          </div>
+        </div>
 
-<!-- Hamburger menu mobile -->
-<script>
-function toggleMenu() {
-  const menu = document.getElementById("mobileNav");
-  if (menu.classList.contains("w3-show")) {
-    menu.classList.remove("w3-show");
-  } else {
-    menu.classList.add("w3-show");
-  }
-}
-</script>
+        <!-- Card 7 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-threat-detection topic-case-studies">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/phishing.png" alt="Phishing prevention training"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Phishing Prevention</h4>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-incident-response topic-case-studies">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/data-backup.jpg" alt="Data backup best practices 3-2-1"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Data Backup Best Practices</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="w3-row-padding w3-center w3-margin-top">
+
+        <!-- Card 9 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-incident-response topic-case-studies">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/irp.jpg" alt="Incident response plan overview"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Incident Response Plan</h4>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-incident-response task-threat-detection">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/runbook.jpg" alt="Roles and runbooks example"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Roles &amp; Runbooks</h4>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom task-incident-response topic-case-studies">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/tabletop-exercise.jpg" alt="Tabletop exercise"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Tabletop Exercise</h4>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="w3-col l3 m6 s12 w3-margin-bottom topic-case-studies task-threat-detection">
+          <div class="w3-card-4 w3-white w3-padding" style="max-width:400px; margin:auto;">
+            <img src="img/portfolio/site-map.jpg" alt="Sitemap / page index"
+                 style="width:100%; height:250px; object-fit:cover;">
+            <h4 class="w3-text-indigo">Sitemap</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w3-indigo w3-padding-24 w3-center">
+    <p class="w3-text-white">© 2025 PelTech LLC</p>
+  </footer>
 
 </body>
 </html>
